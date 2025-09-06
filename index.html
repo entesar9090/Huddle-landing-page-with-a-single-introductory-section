@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    .attribution { 
+      
+      font-size: 14px; 
+      text-align: center; 
+    }
+    .attribution a { 
+      color:purple;
+    }
+    :root{
+      --Purple700: hsl(257, 40%, 49%);
+      --Magenta400: hsl(300, 69%, 71%);
+    }
+
+    *{
+      
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      
+      }
+    body{
+       font-family: "Open Sans", sans-serif;
+       background-color: var(--Purple700);
+       background-image: url("images/bg-desktop.svg");
+        }
+
+    #home{
+      height: 80vh;
+      display:grid;
+      place-content: center;
+        }
+
+    .contain{
+      max-width: 1200px;;
+      display: flex;
+        }
+
+    .text{
+      padding: 30px  40px;
+      color: white;
+        }
+    p{
+      line-height: 1.5;
+      font-size: medium;
+      opacity: 0.7;
+      }
+
+    .text h1{
+       font-family: "Poppins", sans-serif;
+       font-weight: 600;
+       font-size: xx-large;
+          }
+
+    button{
+      color:var(--Purple700);
+      padding: 15px 50px;
+      border-radius: 30px;
+      background-color: white;
+      border: none;
+      box-shadow: 10px  10px 60px  black;
+          }
+
+    img{
+      margin-top: 20px;
+      margin-left: 20px;
+      }
+
+    .ii {
+    display: flex;
+    justify-content: end;
+    margin-right: 150px;
+        }
+
+        i{
+          size: 100px;;
+        }
+
+       .ii
+        a{
+          color: white;
+          font-size: 40px;
+          transition-delay:var(--Magenta400);
+          transition-duration: 1s;
+        }
+
+        button:hover{
+          background-color: var(--Magenta400);
+          cursor: pointer;
+        }
+
+        .ii
+        a:hover{
+          color: var(--Magenta400);
+          cursor: pointer;
+        }
+
+        @media (max-width:600px) {
+          main{
+            display:grid;
+            max-width: min-content;
+            
+            
+          }
+      
+          #home{
+             
+          display:block;
+      
+          
+            
+            text-align: center;
+            
+          
+            
+          }
+          .contain{
+            display: block;
+            
+          padding: 30px;;
+            
+          }
+          
+        
+          
+          footer {
+            
+            margin-top: 140px;;
+            display: grid;
+            max-width: min-content;
+            margin-left: 280px;
+            padding: 40px;;
+            
+          }
+
+          
+        }
+  </style>
+</head>
+<body>
+  <main>
+<i><img src="images/logo.svg" alt=""></i>
+  
+<section id="home">
+  <div class="contain">
+<img src="images/illustration-mockups.svg" alt="">
+<div class="text">
+  <h1>
+  Build The Community Your Fans Will Love
+  </h1>
+<p>
+  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+  Create connections with your users as you engage in genuine discussion. 
+  </p>
+<button>
+  Register
+  </button>
+  </div>
+  </div>
+</section>
+</main>
+  <footer>
+    <div class="ii">
+      <a href="">
+    <i class="fa-brands fa-square-facebook"></i>
+      </a>
+      <a href="">
+    <i class="fa-brands fa-x-twitter"></i>
+    </a>
+    <a href="">
+    <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    </div>
+
+    <p class="attribution">
+      
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Eng.Entesar</a>.
+    </p>
+  </footer>
+</body>
+</html>
